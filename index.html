@@ -1,75 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Throw Me to the Lions</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background: #000;
-      color: #e8e8e8;
-      font-family: Arial, Helvetica, sans-serif;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    main {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 6vw, 6rem);
-      font-weight: 300;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .album {
-      margin-top: 24px;
-      font-size: clamp(.8rem, 1.2vw, 1rem);
-      letter-spacing: .45em;
-      text-transform: uppercase;
-      opacity: .45;
-    }
-
-    .status {
-      position: absolute;
-      bottom: 30px;
-      font-size: .65rem;
-      letter-spacing: .35em;
-      text-transform: uppercase;
-      opacity: .25;
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10100f">
+<meta name="description" content="Throw Me to the Lions. The Cost of Continuity. Explore the recordings and their visual world.">
+<title>Throw Me to the Lions — The Cost of Continuity</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Throw Me to the Lions">
+<meta property="og:title" content="Throw Me to the Lions — The Cost of Continuity">
+<meta property="og:description" content="Selected recordings, photography and films from The Cost of Continuity. An ongoing body of work by Throw Me to the Lions.">
+<meta property="og:url" content="https://throwmetothelions.com/">
+<meta property="og:image" content="https://throwmetothelions.com/assets/images/cover-preview.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="The Cost of Continuity cover: Throw Me to the Lions above a figure holding a black veil in the desert sunset.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Throw Me to the Lions — The Cost of Continuity">
+<meta name="twitter:description" content="Selected recordings, photography and films. A record taking shape.">
+<meta name="twitter:image" content="https://throwmetothelions.com/assets/images/cover-preview.jpg">
+<meta name="twitter:image:alt" content="The Cost of Continuity album cover.">
+<link rel="icon" href="favicon.ico?v=1" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png?v=1" sizes="32x32">
+<link rel="icon" type="image/png" href="icon-192.png?v=1" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=1" sizes="180x180">
+<link rel="canonical" href="https://throwmetothelions.com/">
+<link rel="preload" as="font" href="assets/fonts/cinzel.ttf" type="font/ttf" crossorigin>
+<script>
+try {
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !location.hash && sessionStorage.getItem('tmttl-fade-seen-v2') !== 'yes') {
+    document.documentElement.classList.add('intro-pending');
+    window.introSafetyTimer = setTimeout(() => document.documentElement.classList.remove('intro-pending'), 7000);
+  }
+} catch {}
+</script>
+<link rel="stylesheet" href="styles.css?v=9"><script src="app.js?v=9" defer></script>
 </head>
-
 <body>
+<a class="skip-link" href="#release">Skip to content</a>
+<div class="reading-progress" aria-hidden="true"></div>
+<header><a class="wordmark" href="#home" aria-label="Throw Me to the Lions home">TMTTL<span> /</span></a><nav aria-label="Main navigation"><a href="#music">Music</a><a href="#artist">Artist</a><a href="#visuals">Visuals</a></nav></header>
+<main>
+<section class="hero" id="home" aria-labelledby="title">
+<img class="hero-image" src="assets/images/ritual.webp" srcset="assets/images/ritual-small.webp 900w, assets/images/ritual.webp 2200w" sizes="100vw" alt="A figure holds a black veil above their head in a desert landscape at sunset." width="2200" height="1467" fetchpriority="high">
+<div class="hero-curtain" aria-hidden="true"></div>
+<div class="acquisition" hidden><button id="skip-intro" type="button">Skip intro ↗</button></div>
+<div class="hero-title"><p class="eyebrow">Sound / Image / Continuity</p><h1 id="title">Throw Me<br><span>to the Lions</span></h1></div>
+<div class="hero-bottom"><a href="#release">The Cost of Continuity ↗</a><span class="secondary">An ongoing body of work</span><a href="#release">Scroll to enter ↓</a></div>
+</section>
+<section class="listening section" id="release" aria-labelledby="release-title">
+<div class="section-heading" data-reveal><span>01 / The Cost of Continuity</span><span>Selected recordings</span></div>
+<div class="listening-grid" id="music">
+<div class="album-column"><p class="eyebrow" data-reveal>Throw Me to the Lions</p><h2 id="release-title" data-reveal>The Cost<br>of Continuity</h2>
+<figure class="album-cover" data-reveal><img src="assets/images/tcoc-cover.webp" alt="The Cost of Continuity cover: Throw Me to the Lions lettering above a figure beneath a black veil in the desert sunset." width="1800" height="1200" loading="lazy"></figure>
+<div class="album-meta"><span>The album</span><span>Selected excerpts / 45 seconds each</span></div>
+</div>
+<div class="listening-sound"><p class="eyebrow">Enter through sound</p><p class="listening-intro">Selected excerpts from a record taking shape.</p><div class="tracks">
+<article class="track" data-title="Ava Penelope">
+  <div class="track-head"><button class="track-play" type="button" aria-label="Play Ava Penelope" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button><h3>Ava Penelope</h3><span class="track-index">01</span></div>
+  <audio controls preload="none" aria-label="Ava Penelope — 45 second excerpt" src="assets/audio/ava-penelope.mp3"></audio>
+  <div class="track-timeline" hidden><input class="track-seek" type="range" min="0" max="45" step="0.1" value="0" aria-label="Seek within Ava Penelope" disabled><span class="track-time">0:00 / 0:45</span></div>
+</article>
+<article class="track" data-title="Backlash">
+  <div class="track-head"><button class="track-play" type="button" aria-label="Play Backlash" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button><h3>Backlash</h3><span class="track-index">02</span></div>
+  <audio controls preload="none" aria-label="Backlash — 45 second excerpt" src="assets/audio/backlash.mp3"></audio>
+  <div class="track-timeline" hidden><input class="track-seek" type="range" min="0" max="45" step="0.1" value="0" aria-label="Seek within Backlash" disabled><span class="track-time">0:00 / 0:45</span></div>
+</article>
+<article class="track" data-title="Everywhere the light touches">
+  <div class="track-head"><button class="track-play" type="button" aria-label="Play Everywhere the light touches" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button><h3>Everywhere the light touches</h3><span class="track-index">03</span></div>
+  <audio controls preload="none" aria-label="Everywhere the light touches — 45 second excerpt" src="assets/audio/everywhere-the-light-touches.mp3"></audio>
+  <div class="track-timeline" hidden><input class="track-seek" type="range" min="0" max="45" step="0.1" value="0" aria-label="Seek within Everywhere the light touches" disabled><span class="track-time">0:00 / 0:45</span></div>
+</article>
+<article class="track" data-title="Never a Question">
+  <div class="track-head"><button class="track-play" type="button" aria-label="Play Never a Question" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button><h3>Never a Question</h3><span class="track-index">04</span></div>
+  <audio controls preload="none" aria-label="Never a Question — 45 second excerpt" src="assets/audio/never-a-question.mp3"></audio>
+  <div class="track-timeline" hidden><input class="track-seek" type="range" min="0" max="45" step="0.1" value="0" aria-label="Seek within Never a Question" disabled><span class="track-time">0:00 / 0:45</span></div>
+</article>
+<article class="track" data-title="Spackeled">
+  <div class="track-head"><button class="track-play" type="button" aria-label="Play Spackeled" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button><h3>Spackeled</h3><span class="track-index">05</span></div>
+  <audio controls preload="none" aria-label="Spackeled — 45 second excerpt" src="assets/audio/spackeled.mp3"></audio>
+  <div class="track-timeline" hidden><input class="track-seek" type="range" min="0" max="45" step="0.1" value="0" aria-label="Seek within Spackeled" disabled><span class="track-time">0:00 / 0:45</span></div>
+</article>
+<article class="track" data-title="The Growth">
+  <div class="track-head"><button class="track-play" type="button" aria-label="Play The Growth" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg></button><h3>The Growth</h3><span class="track-index">06</span></div>
+  <audio controls preload="none" aria-label="The Growth — 45 second excerpt" src="assets/audio/the-growth.mp3"></audio>
+  <div class="track-timeline" hidden><input class="track-seek" type="range" min="0" max="45" step="0.1" value="0" aria-label="Seek within The Growth" disabled><span class="track-time">0:00 / 0:45</span></div>
+</article>
+</div><p id="audio-status" class="small-note" role="status">Select a recording to listen.</p><a class="text-link" href="#artist">The story behind the record <span>↓</span></a></div></div>
+</section>
+<section class="artist section" id="artist" aria-labelledby="artist-title">
+<div class="section-heading" data-reveal><span>02 / About the artist</span><span>Sound &amp; image</span></div>
+<div class="artist-grid"><div class="artist-visual"><p class="eyebrow">Throw Me to the Lions</p><h2 id="artist-title" data-reveal>Thirty years.<br>An open door.</h2><figure class="artist-photo" data-reveal><img src="assets/images/veil.webp" alt="Sunlight passes through a black veil held above a figure, from the AVZ-45 photograph." width="1467" height="2200" loading="lazy"></figure></div>
+<div class="artist-copy" data-reveal><p class="artist-lead">For nearly thirty years, the music behind Throw Me to the Lions remained private, with no official releases. <em>The Cost of Continuity</em> begins to bring that long practice into public view, combining electronic music and photography around the cost of appearing normal while living with internal unrest.</p>
+<p>The project explores the distance between how someone looks and what they experience. Illness, interrupted thought, and shifting emotional states can be difficult to recognize from the outside. Maintaining a composed appearance can carry a considerable physical and psychological cost.</p>
+<p>That tension shapes the music. Glitches suggest thoughts catching, delaying, or breaking down under pressure. High frequencies express anxiety, while the low end carries a more romanticized weight of depression and changes in mood. These sound sculptures give the record a language for experiences that often resist a straightforward explanation.</p>
+<p>The photography approaches the same subject through the veil. It conceals parts of the face without making the person disappear. Held, lifted, or stretched against the light, it also becomes a physical part of the composition—changing what is visible and how closely we have to look.</p>
+<p>The photographs remain warm and beautiful. That matters to a project in which happiness and difficulty can coexist. A composed face need not tell the whole story; its expression can still be sincere. Likewise, the music leaves room for warmth and melody alongside disruption.</p>
+<p>Still taking shape, <em>The Cost of Continuity</em> brings these forms into a shared body of work. The photographs invite us to look; the music asks us to consider how much might remain unseen.</p></div></div>
+</section>
+<section class="image-sequence" id="visuals" aria-labelledby="visual-title" aria-roledescription="carousel">
+<div class="sequence-stage">
+<div class="sequence-images" id="sequence-images"><img class="sequence-image is-active" src="assets/images/visual.webp" alt="Black fabric suspended in the air against the sunset." width="2200" height="1467" loading="lazy"></div>
+<div class="sequence-shade" aria-hidden="true"></div>
+<div class="sequence-top"><p class="eyebrow">03 / Visual studies</p><span id="image-count">01 / 08</span></div>
+<div class="sequence-caption"><h2 id="visual-title">Between light<br>and disappearance.</h2>
+<div class="sequence-bottom" hidden><div class="sequence-dots" id="sequence-dots" role="group" aria-label="Select a photograph"></div><div class="sequence-controls"><button id="previous-image" aria-label="Previous photograph" type="button">←</button><button id="pause-images" type="button">Pause motion</button><button id="next-image" aria-label="Next photograph" type="button">→</button></div></div>
+<p id="image-status" class="sr-only" aria-live="polite"></p>
+</div></div>
+</section>
 
-  <main>
-    <h1>Throw Me to the Lions</h1>
-
-    <div class="album">
-      The Cost of Continuity
-    </div>
-
-    <div class="status">
-      Transmission Pending
-    </div>
-  </main>
-
-</body>
-</html>
+<section class="credits section" id="acknowledgements" aria-labelledby="credits-title">
+<div class="section-heading" data-reveal><span>04 / Acknowledgements</span><span>The vision behind the images</span></div>
+<div class="credits-grid">
+<div class="credits-copy" data-reveal><p class="eyebrow">Model &amp; creative vision</p><h2 id="credits-title">Ashley Brown</h2>
+<p>Ashley had the idea for this shoot, and it resonated with me so much that it became the thesis of this record. Without her vision, this record would not be nearly as cohesive and seamless as I hope it will be when it’s finished.</p>
+<p>She is as talented as she is beautiful, and deserves a lot of credit for helping me shape this release.</p>
+<div class="social-links" role="group" aria-label="Ashley Brown’s social profiles"><a href="https://www.facebook.com/ashley.knudsen.90" target="_blank" rel="noopener noreferrer" aria-label="Ashley Brown on Facebook (opens in a new tab)" title="Ashley Brown on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.8 1.8-1.8H18V2.3c-.7-.1-1.7-.3-2.9-.3-2.9 0-4.8 1.8-4.8 5.1v2.4H7V13h3.3v9Z"/></svg></a><a href="https://www.instagram.com/copper.curls.modeling/" target="_blank" rel="noopener noreferrer" aria-label="Ashley Brown on Instagram (opens in a new tab)" title="Ashley Brown on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="6.5" r="1"/></svg></a></div>
+</div>
+<figure class="credits-photo" data-reveal><img src="assets/images/avz-86.webp" alt="Ashley Brown in a black dress, holding the veil at her waist in the desert light." width="1467" height="2200" loading="lazy"></figure>
+</div>
+</section>
+<section class="videos section" id="videos" aria-labelledby="videos-title">
+<div class="section-heading" data-reveal><span>05 / Moving images</span><span>Sound &amp; motion</span></div>
+<div class="video-intro" data-reveal><h2 id="videos-title">Another way in.</h2><p>Select a film to watch.</p></div>
+<div class="video-grid">
+<figure class="video-work" data-reveal>
+<video controls preload="none" playsinline poster="assets/images/everywhere-the-light-touches-video.jpg" width="1920" height="1080" aria-label="Everywhere the Light Touches">
+<source src="assets/video/everywhere-the-light-touches.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="assets/video/everywhere-the-light-touches.mp4">Open Everywhere the Light Touches</a>.
+</video>
+<figcaption><h3>Everywhere the Light Touches</h3><span aria-label="3 minutes 18 seconds">3:18</span></figcaption>
+<p class="video-error small-note" role="status" hidden>This film could not load. <a href="assets/video/everywhere-the-light-touches.mp4">Open the video directly ↗</a></p>
+</figure>
+<figure class="video-work" data-reveal>
+<video controls preload="none" playsinline poster="assets/images/never-a-question-video.jpg" width="1920" height="1080" aria-label="Never a Question">
+<source src="assets/video/never-a-question.mp4" type="video/mp4">
+Your browser cannot play this video. <a href="assets/video/never-a-question.mp4">Open Never a Question</a>.
+</video>
+<figcaption><h3>Never a Question</h3><span aria-label="3 minutes 36 seconds">3:36</span></figcaption>
+<p class="video-error small-note" role="status" hidden>This film could not load. <a href="assets/video/never-a-question.mp4">Open the video directly ↗</a></p>
+</figure>
+</div>
+</section>
+</main>
+<footer><a href="#home">Throw Me to the Lions</a><div class="social-links" role="group" aria-label="Follow Throw Me to the Lions"><a href="https://www.instagram.com/throw_me_to_the_lions/" target="_blank" rel="noopener noreferrer" aria-label="Throw Me to the Lions on Instagram (opens in a new tab)" title="Throw Me to the Lions on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="6.5" r="1"/></svg></a><a href="https://www.youtube.com/@ThrowMetotheLions" target="_blank" rel="noopener noreferrer" aria-label="Throw Me to the Lions on YouTube (opens in a new tab)" title="Throw Me to the Lions on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 7a3 3 0 0 0-2-2c-2-.5-6-.5-8-.5s-6 0-8 .5a3 3 0 0 0-2 2 28 28 0 0 0 0 10 3 3 0 0 0 2 2c2 .5 6 .5 8 .5s6 0 8-.5a3 3 0 0 0 2-2 28 28 0 0 0 0-10Z"/><path d="m10 8 6 4-6 4Z" fill="var(--ink)"/></svg></a><a href="https://soundcloud.com/strict9" target="_blank" rel="noopener noreferrer" aria-label="Throw Me to the Lions on SoundCloud (opens in a new tab)" title="Throw Me to the Lions on SoundCloud"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 17V7.5a6 6 0 0 1 9.7 3.4A3.2 3.2 0 1 1 20 17Z"/><path d="M2 12v4m3-7v8m3-10v10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a></div><button id="replay-intro" type="button">Replay opening ↑</button></footer>
+</body></html>
