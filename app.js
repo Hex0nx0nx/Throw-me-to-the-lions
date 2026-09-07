@@ -65,7 +65,7 @@ rows.forEach(row => {
   const label = row.querySelector('.track-time');
   const title = row.dataset.title;
   const syncProgress = () => {
-    const duration = Number.isFinite(audio.duration) ? audio.duration : 45;
+    const duration = Number.isFinite(audio.duration) ? audio.duration : Number(audio.dataset.duration);
     seek.max = duration;
     seek.value = audio.currentTime;
     seek.style.setProperty('--played', `${duration > 0 ? audio.currentTime / duration * 100 : 0}%`);
@@ -110,9 +110,9 @@ rows.forEach(row => {
   });
   audio.addEventListener('ended', () => {
     syncState();
-    status.textContent = `Excerpt complete / ${title}`;
+    status.textContent = `Track complete / ${title}`;
   });
-  audio.addEventListener('error', () => { status.textContent = `The ${title} excerpt could not load. Please try again.`; });
+  audio.addEventListener('error', () => { status.textContent = `${title} could not load. Please try again.`; });
   audio.addEventListener('loadedmetadata', () => { seek.disabled = false; syncProgress(); });
   audio.addEventListener('timeupdate', syncProgress);
   seek.addEventListener('input', () => { audio.currentTime = Number(seek.value); syncProgress(); });
