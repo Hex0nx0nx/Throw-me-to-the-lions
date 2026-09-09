@@ -110,7 +110,14 @@ rows.forEach(row => {
   });
   audio.addEventListener('ended', () => {
     syncState();
-    status.textContent = `Track complete / ${title}`;
+    const nextRow = rows[rows.indexOf(row) + 1];
+    if (nextRow) {
+      status.textContent = `Up next / ${nextRow.dataset.title}`;
+      nextRow.querySelector('.track-play').click();
+    } else {
+      intendedAudio = null;
+      status.textContent = 'Listening sequence complete.';
+    }
   });
   audio.addEventListener('error', () => { status.textContent = `${title} could not load. Please try again.`; });
   audio.addEventListener('loadedmetadata', () => { seek.disabled = false; syncProgress(); });
