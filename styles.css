@@ -106,8 +106,6 @@ body:has(#track-study[open]){overflow:hidden}
 @media(max-width:700px){.videos{padding-top:55px;padding-bottom:65px}.video-intro{display:block;margin-bottom:28px}.video-intro p{margin-top:16px}.video-grid{grid-template-columns:1fr;gap:38px}.video-work figcaption{padding:16px 0}.video-work h3{font-size:17px}}
 
 /* The release now reads as a finished record rather than a work in progress. */
-.release-state{display:flex;align-items:flex-start;gap:10px;margin:18px 0 0;color:#c6c1b7;font-size:13px;line-height:1.7;letter-spacing:.01em}
-.release-state span{flex:0 0 auto;width:6px;height:6px;margin-top:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px #c5a47199}
 .tracklist{padding-top:30px;padding-bottom:110px;background:#151513}
 .tracklist-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:12%;align-items:start}
 .tracklist-intro{position:sticky;top:50px;max-width:470px}
@@ -118,4 +116,4 @@ body:has(#track-study[open]){overflow:hidden}
 .album-tracklist li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line)}
 .album-tracklist span{color:var(--gold);font-size:12px;font-variant-numeric:tabular-nums;letter-spacing:.08em}
 .album-tracklist strong{font-size:16px;font-weight:400;line-height:1.55;letter-spacing:.01em}
-@media(max-width:700px){.release-state{font-size:12px}.tracklist{padding-top:20px;padding-bottom:70px}.tracklist-grid{grid-template-columns:1fr;gap:34px}.tracklist-intro{position:static}.tracklist-intro h2{font-size:38px}.album-tracklist li{grid-template-columns:36px minmax(0,1fr);gap:12px;padding:14px 0}.album-tracklist strong{font-size:15px}}
+@media(max-width:700px){.tracklist{padding-top:20px;padding-bottom:70px}.tracklist-grid{grid-template-columns:1fr;gap:34px}.tracklist-intro{position:static}.tracklist-intro h2{font-size:38px}.album-tracklist li{grid-template-columns:36px minmax(0,1fr);gap:12px;padding:14px 0}.album-tracklist strong{font-size:15px}}
