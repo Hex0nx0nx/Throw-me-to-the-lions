@@ -116,4 +116,9 @@ body:has(#track-study[open]){overflow:hidden}
 .album-tracklist li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line)}
 .album-tracklist span{color:var(--gold);font-size:12px;font-variant-numeric:tabular-nums;letter-spacing:.08em}
 .album-tracklist strong{font-size:16px;font-weight:400;line-height:1.55;letter-spacing:.01em}
-@media(max-width:700px){.tracklist{padding-top:20px;padding-bottom:70px}.tracklist-grid{grid-template-columns:1fr;gap:34px}.tracklist-intro{position:static}.tracklist-intro h2{font-size:38px}.album-tracklist li{grid-template-columns:36px minmax(0,1fr);gap:12px;padding:14px 0}.album-tracklist strong{font-size:15px}}
+.release-links{display:flex;align-items:center;gap:12px;margin-top:22px}
+.release-links>span{margin-right:4px;color:var(--muted);font-size:12px;line-height:1.5;letter-spacing:.1em;text-transform:uppercase}
+.release-links>a{display:grid;place-items:center;width:44px;height:44px;color:var(--paper);border:1px solid var(--line);border-radius:50%;transition:color .25s,border-color .25s,background .25s}
+.release-links>a:hover{color:var(--gold);border-color:var(--gold);background:#c5a4710c}
+.release-links svg{width:22px;height:22px;fill:currentColor}
+@media(max-width:700px){.tracklist{padding-top:20px;padding-bottom:70px}.tracklist-grid{grid-template-columns:1fr;gap:34px}.tracklist-intro{position:static}.tracklist-intro h2{font-size:38px}.album-tracklist li{grid-template-columns:36px minmax(0,1fr);gap:12px;padding:14px 0}.album-tracklist strong{font-size:15px}.release-links{margin-top:20px}}
